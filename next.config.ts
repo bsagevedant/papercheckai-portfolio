@@ -6,7 +6,7 @@ export default withMDX()({
   redirects: async () => [
     {
       source: '/posts/:slug',
-      destination: '/thoughts/:slug',
+      destination: '/blogs/:slug',
       permanent: false,
     },
   ],
