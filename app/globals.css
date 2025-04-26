@@ -275,3 +275,18 @@ article {
     filter: blur(0);
   }
 }
+
+/* navbar.css */
+.navbar {
+    padding: 1rem;
+}
+
+.navbar.light {
+    background-color: white;
+    color: black;
+}
+
+.navbar.dark {
+    background-color: black;
+    color: white;
+}
