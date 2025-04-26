@@ -1,4 +1,26 @@
 'use client'
+// components/navbar.tsx
+import React, { useState } from 'react';
+import './navbar.css'; // Ensure you have a CSS file for styles
+
+const Navbar = () => {
+    const [isDarkMode, setIsDarkMode] = useState(false);
+
+    const toggleDarkMode = () => {
+        setIsDarkMode(prevMode => !prevMode);
+    };
+
+    return (
+        <nav className={isDarkMode ? 'navbar dark' : 'navbar light'}>
+            <button onClick={toggleDarkMode}>
+                {isDarkMode ? 'Light Mode' : 'Dark Mode'}
+            </button>
+            {/* ... existing code ... */}
+        </nav>
+    );
+};
+
+export default Navbar;
 
 import cn from 'clsx'
 import { usePathname } from 'next/navigation'
